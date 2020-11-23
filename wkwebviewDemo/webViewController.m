@@ -31,6 +31,7 @@
     //设置是否允许画中画技术 在特定设备上有效
     config.allowsPictureInPictureMediaPlayback = YES;
 
+    
     WKPreferences *preferences = [WKPreferences new];
     //是否支持JavaScript
     preferences.javaScriptEnabled = YES;

@@ -52,6 +52,7 @@
     WKWebView *webview = [[WKWebView alloc] initWithFrame:CGRectMake(0, [self isPhoneX]==YES?88:64, [UIScreen mainScreen].bounds.size.width,[self isPhoneX]==YES? [UIScreen mainScreen].bounds.size.height-34-88:[UIScreen mainScreen].bounds.size.height-64) configuration:config];
     webview.navigationDelegate = self;
     webview.UIDelegate = self;
+    
     webview.scrollView.bounces = NO;
     [webview loadRequest:[NSURLRequest requestWithURL:[[NSBundle mainBundle] URLForResource:@"zcz.html" withExtension:nil]]];
     self.webview = webview;
